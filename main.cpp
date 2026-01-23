@@ -11,12 +11,21 @@ int sum(int n){
   return s;
 }
 
+int prod(int n){
+  int p = 1;
+  for(int i=1;i<=n;i++)
+    p=p*i;
+
+  return p;
+}
+
 int main(){
   int n;
   cout << "Give a number: " << endl;
 
   cin >> n;
   cout << sum(n) << endl;
+  cout << prod(n) << endl;
 }
 
 
