@@ -1,7 +1,22 @@
 #include <iostream>
 
+using namespace std;
+
+int sum(int n){
+
+  int s = 0;
+  for(int i = 0;i<=n;i++)
+    s += i;
+
+  return s;
+}
 
 int main(){
-  std::cout << "Hello World!" << std::endl;
+  int n;
+  cout << "Give a number: " << endl;
 
+  cin >> n;
+  cout << sum(n) << endl;
 }
+
+
